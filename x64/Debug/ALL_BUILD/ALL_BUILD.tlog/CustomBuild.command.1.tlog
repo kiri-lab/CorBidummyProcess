@@ -1,0 +1,10 @@
+^C:\USERS\KIRIM\DESKTOP\KIRI-LAB\CORBI\CORBIDUMMYPROCESS\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/kirim/Desktop/kiri-lab/CorBi/CorBidummyProcess -BC:/Users/kirim/Desktop/kiri-lab/CorBi/CorBidummyProcess --check-stamp-file C:/Users/kirim/Desktop/kiri-lab/CorBi/CorBidummyProcess/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
